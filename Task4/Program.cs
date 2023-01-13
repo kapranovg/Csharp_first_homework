@@ -13,13 +13,11 @@ if (number <= 1)
     System.Console.WriteLine("Нет чётных чисел для заданного условия");
 }
 
+while (count <= number)
 {
-    while (count <= number)
+    if (count % 2 == 0 && count > 0)
     {
-        if (count % 2 == 0 && count > 0)
-        {
-            System.Console.Write($"{count} ");
-        }
-        count++;
+        System.Console.Write($"{count} ");
     }
+    count++;
 }
